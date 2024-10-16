@@ -15,7 +15,7 @@ COPY ./package.json .
 
 
 COPY . .
-RUN npm ci
+#RUN npm ci
 RUN npm run build
 
 FROM node:20.7.0-alpine AS final
